@@ -41,7 +41,6 @@ def main():
 
     print(f"Input string:\n{input_string}\nOutput string:\n{output_string}")
 
-    # put logic here
 
 if __name__ == "__main__":
     main()
