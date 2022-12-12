@@ -32,8 +32,8 @@ def main():
     }
 
     rotors = [
-        "wgsdtolkpcrxyhzujnbvieaqfm",
-        "yshgdxzwbpoatejvqlfcirknum"
+        list("wgsdtolkpcrxyhzujnbvieaqfm"),
+        list("yshgdxzwbpoatejvqlfcirknum")
     ]
 
     input_string = "example text"
