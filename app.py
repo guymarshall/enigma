@@ -2,6 +2,10 @@
 Read string as input
 
 For each character that IS NOT " " OR IS NOT punctuation OR IS NOT a number
+    pass character through switchboard
+    if character is to be swapped, swap character
+    set new value to character
+
     pass character through rotor_1
     alphabet[0] goes to rotor_1[0] etc
     set new value to character
@@ -12,12 +16,11 @@ For each character that IS NOT " " OR IS NOT punctuation OR IS NOT a number
     set new value to character
     move rotor_2 values by 1 position
 
-    go to switchboard
-    if character is to be swapped, swap character
-
     go backwards to rotor_2 and repeat those steps
 
     go backwards to rotor_1 and repeat those steps
+
+    go backwards to switchboard and repeat those steps
 
     return new character
 
@@ -25,15 +28,15 @@ Print encrypted string
 """
 
 def main():
-    rotor_1 = "wgsdtolkpcrxyhzujnbvieaqfm"
-    rotor_2 = "yshgdxzwbpoatejvqlfcirknum"
-
     switchboard = {
         "g": "o",
         "p": "z",
         "d": "b",
         "w": "j"
     }
+
+    rotor_1 = "wgsdtolkpcrxyhzujnbvieaqfm"
+    rotor_2 = "yshgdxzwbpoatejvqlfcirknum"
 
     input_string = "example text"
 
