@@ -46,7 +46,9 @@ def main():
         
         # rotors
 
-        # back to switchboard
+        for key, value in switchboard:
+            if key == character:
+                character = value
 
     output = ""
 
