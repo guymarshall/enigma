@@ -41,6 +41,15 @@ def main():
 
     input = "example text"
 
+    for character in input:
+        for key, value in switchboard:
+            if key == character:
+                character = value
+        
+        # rotors
+
+        # back to switchboard
+
     output = ""
 
     print(f"Input string:\n{input}\nOutput string:\n{output}")
