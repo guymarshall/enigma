@@ -39,11 +39,11 @@ def main():
         list("yshgdxzwbpoatejvqlfcirknum")
     ]
 
-    input_string = "example text"
+    input = "example text"
 
-    output_string = ""
+    output = ""
 
-    print(f"Input string:\n{input_string}\nOutput string:\n{output_string}")
+    print(f"Input string:\n{input}\nOutput string:\n{output}")
 
 
 if __name__ == "__main__":
