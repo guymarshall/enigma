@@ -23,6 +23,9 @@ For each character that IS NOT " " OR IS NOT punctuation OR IS NOT a number
 Print encrypted string
 """
 
+def rotate(list, count):
+    return list[count:] + list[:count]
+
 def main():
     switchboard = {
         "g": "o",
