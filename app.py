@@ -14,6 +14,7 @@ def main():
     ]
 
     input = "example text"
+    output = ""
 
     for character in input:
         for key, value in switchboard:
@@ -25,8 +26,8 @@ def main():
         for key, value in switchboard:
             if key == character:
                 character = value
-
-    output = ""
+        
+        output += character
 
     print(f"Input string:\n{input}\nOutput string:\n{output}")
 
