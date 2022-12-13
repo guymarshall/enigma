@@ -1,3 +1,5 @@
+from rotor import Rotor
+
 """
 Read string as input
 
@@ -30,8 +32,8 @@ def main():
     }
 
     rotors = [
-        list("wgsdtolkpcrxyhzujnbvieaqfm"),
-        list("yshgdxzwbpoatejvqlfcirknum")
+        Rotor("wgsdtolkpcrxyhzujnbvieaqfm"),
+        Rotor("yshgdxzwbpoatejvqlfcirknum")
     ]
 
     input = "example text"
