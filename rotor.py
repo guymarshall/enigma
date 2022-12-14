@@ -16,8 +16,8 @@ class Rotor:
             return letter
         
         if letter in self.alphabet_lower:
-            print("lowercase swap")
+            index = self.alphabet_lower.index(letter)
         elif letter in self.alphabet_upper:
-            print("uppercase swap")
+            index = self.alphabet_upper.index(letter)
         
-        return letter
+        return self.letters[index]
