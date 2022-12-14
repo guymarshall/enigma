@@ -20,4 +20,8 @@ class Rotor:
         elif letter in self.alphabet_upper:
             index = self.alphabet_upper.index(letter)
         
-        return self.letters[index]
+        letter = self.letters[index]
+
+        self.rotate()
+        
+        return letter
