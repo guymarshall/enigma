@@ -5,6 +5,6 @@ class Rotor:
         alphabet_lower = list("abcdefghijklmnopqrstuvwxyz")
         alphabet_upper = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-    def rotate(self, letters):
-        self.letters = letters[1:] + letters[:1]
+    def rotate(self):
+        self.letters = self.letters[1:] + self.letters[:1]
         self.rotate_count += 1
