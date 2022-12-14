@@ -5,10 +5,12 @@ class Rotor:
         self.alphabet_lower = list("abcdefghijklmnopqrstuvwxyz")
         self.alphabet_upper = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
+    @classmethod
     def rotate(self):
         self.letters = self.letters[1:] + self.letters[:1]
         self.rotations = self.rotations + 1
     
+    @classmethod
     def use(self, letter):
         if letter not in self.alphabet_lower and letter not in self.alphabet_upper:
             return letter
