@@ -8,3 +8,9 @@ class Rotor:
     def rotate(self):
         self.letters = self.letters[1:] + self.letters[:1]
         self.rotations = self.rotations + 1
+    
+    def use(self, letter):
+        if letter not in self.alphabet_lower and letter not in self.alphabet_upper:
+            return letter
+        
+        
