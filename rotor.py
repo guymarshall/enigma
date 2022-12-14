@@ -15,4 +15,9 @@ class Rotor:
         if letter not in self.alphabet_lower and letter not in self.alphabet_upper:
             return letter
         
+        if letter in self.alphabet_lower:
+            print("lowercase swap")
+        elif letter in self.alphabet_upper:
+            print("uppercase swap")
         
+        return letter
