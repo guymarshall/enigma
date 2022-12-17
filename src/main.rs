@@ -64,7 +64,6 @@ if __name__ == "__main__":
     main()
 */
 
-
 /*ROTOR
 class Rotor:
     def __init__(self, letters):
