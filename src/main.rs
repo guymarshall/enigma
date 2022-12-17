@@ -21,8 +21,10 @@ For each character that IS NOT " " OR IS NOT punctuation OR IS NOT a number
 Print encrypted string
 */
 
+mod user_input;
+
 fn main() {
-    println!("Hello, world!");
+    let input: String = user_input::get_user_input("Enter text to encrypt:");
 }
 
 /*MAIN
