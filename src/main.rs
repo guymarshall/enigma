@@ -23,6 +23,13 @@ Print encrypted string
 
 mod user_input;
 
+struct Rotor {
+    letters: Vec<char>,
+    rotations: i32,
+    alphabet_lower: Vec<char>,
+    alphabet_upper: Vec<char>
+}
+
 fn main() {
     let input: String = user_input::get_user_input("Enter text to encrypt:");
 }
