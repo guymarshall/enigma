@@ -1,5 +1,6 @@
 from rotor import Rotor
 
+
 def main():
     switchboard = {
         "g": "o",
@@ -20,13 +21,13 @@ def main():
         for key, value in switchboard:
             if key == character:
                 character = value
-        
+
         # rotors
 
         for key, value in switchboard:
             if key == character:
                 character = value
-        
+
         output += character
 
     print(f"Input string:\n{input}\nOutput string:\n{output}")
